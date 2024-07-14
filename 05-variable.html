@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+    <style>
+        body {
+            background-color: black;
+            color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="
+        count += 4;
+        console.log(`added 3: ${count}`);
+        ">+4</button>
+    <button onclick="
+        count += 5;
+        console.log(`added 5: ${count}`);
+    ">+5</button>
+    <button onclick="
+        count --;
+        console.log(`subtracted 1: ${count}`);
+    ">-1</button>
+    <button onclick="
+        count -= 2;
+        console.log(`subtracted 2: ${count}`);
+    ">-2</button>
+    <button onclick="
+        count -= 3;
+        console.log(`subtracted 3: ${count}`);
+    ">-3</button>
+    <hr>
+    
+    <script>
+
+        let count = 0;
+        let Variable1 = 3;
+        console.log(Variable1);
+
+        let calculation = 2 + 2;
+        console.log(calculation);
+
+        console.log(calculation + 2);
+        console.log(Variable1 * calculation);
+
+        let result = calculation + 2    
+        console.log(result);
+        let message = 'hello world';
+        console.log(message);
+
+        Variable1 = 5;
+        console.log(Variable1);
+
+        Variable1 = Variable1 + Variable1;
+        console.log(Variable1);
+
+        const Variable2 = 3;
+        console.log(Variable2);
+
+        console.log(typeof Variable2);
+        console.log(typeof message);
+
+
+        //assignment for the variable lesson
+
+        let fName = 'Eric Ngaruiya Gitau'
+        console.log(`My name is: ${fName}`);
+
+        let coffee = 5
+        let bagel = 3 
+        bagel *= 2;
+        let soup = 9
+
+        let cost = (`${coffee + bagel + soup}`)
+        console.log(`cost of the food: $${cost}`);
+
+        let costTax = cost * 0.1;
+        console.log(`Tax (10%): $${cost}`); 
+
+        const totalCost = cost + costTax;
+        console.log(`Total cost: $ ${totalCost}`);
+
+
+    </script>
+</body>
+</html>
